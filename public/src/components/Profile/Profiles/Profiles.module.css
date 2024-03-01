@@ -1,0 +1,8 @@
+.profiles {
+  width: 100%;
+  border-right: 4px solid #f6f5fb;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 12px;
+  position: relative;
+}

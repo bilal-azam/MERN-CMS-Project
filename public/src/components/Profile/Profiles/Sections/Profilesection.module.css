@@ -1,0 +1,187 @@
+.profile-main {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.profile-main h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.section {
+  display: flex;
+  flex-flow: nowrap column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.section label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0077ff;
+}
+
+.section input,
+select,
+.image,
+textarea {
+  border: 0px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f6f5fb;
+  padding-left: 10px;
+  font-size: 1rem;
+  color: rgb(46, 46, 46);
+}
+
+.section input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+.section input::placeholder {
+  color: rgb(100, 100, 100);
+}
+
+textarea {
+  padding-top: 5px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  min-height: 35px;
+}
+
+.section select option {
+  padding: 10px;
+}
+
+.image {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image input {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding: 1rem;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.image img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 4px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.image-file-name {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+}
+
+.button button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: #8d4ef5;
+  color: white;
+  font-weight: 700;
+  border: 0px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border: 0;
+  border-radius: 6px;
+}
+
+.button button:hover {
+  background-color: #7d41e1;
+}
+
+.back-btn {
+  position: absolute;
+  left: -54px;
+  top: -3px;
+  cursor: pointer;
+}
+
+.invalid input,
+.invalid textarea,
+.invalid select {
+  background-color: rgb(250, 186, 186);
+  border: 1px solid rgb(243, 93, 93);
+}
+
+.loader {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-loader {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+}
+
+.hidden-username {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .back-btn {
+    left: -70px;
+    top: -3px;
+  }
+}
+
+@media (max-width: 910px) {
+  .profile-main {
+    width: 80%;
+  }
+  .back-btn {
+    left: 90%;
+  }
+  .image-file-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 490px) {
+  .back-btn {
+    left: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  .back-btn {
+    left: 86%;
+  }
+  .message {
+    padding: 8px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .back-btn {
+    left: 80%;
+  }
+}

@@ -1,0 +1,215 @@
+a {
+  text-decoration: none;
+}
+.main-header {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap row;
+  margin: auto;
+  padding: 2rem 0px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.logo h1 {
+  color: rgb(65, 65, 65);
+  font-size: 1.6rem;
+}
+
+.logo span {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #0091f1, #15d0ff);
+}
+
+.navlink {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+  color: rgb(80, 80, 80);
+  font-weight: 500;
+}
+
+.navlink p {
+  position: relative;
+  color: rgb(80, 80, 80);
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 1px;
+  border: 0px;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #2daafc;
+}
+
+.active {
+  color: #0090f0 !important;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 12px;
+  border: 0px;
+  border-radius: 8px;
+  width: 60%;
+  height: 4px;
+  background-color: #2daafc;
+}
+
+.login-btn,
+.logout-btn {
+  align-items: center;
+  appearance: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "JetBrains Mono", monospace;
+  padding: 12px 25px;
+  text-align: left;
+  transition: box-shadow 0.15s, transform 0.15s;
+  font-size: 16px;
+  border-radius: 64px;
+}
+
+.login-btn {
+  background-image: radial-gradient(
+    100% 100% at 100% 50%,
+    #0091f1 0,
+    #15d0ff 100%
+  );
+  box-shadow: 1px 1px 10px 2px rgba(12, 186, 255, 0.452);
+}
+
+.logout-btn {
+  background-image: radial-gradient(
+    100% 100% at 100% 50%,
+    #ff4646 0,
+    #ff792c 100%
+  );
+  box-shadow: 1px 1px 10px 2px rgba(255, 110, 91, 0.452);
+}
+
+.login-btn:hover {
+  background-image: radial-gradient(
+    100% 100% at 100% 50%,
+    #0083da 0,
+    #11bee9 100%
+  );
+  box-shadow: 1px 1px 10px 4px rgba(9, 165, 226, 0.452);
+}
+
+.logout-btn:hover {
+  background-image: radial-gradient(
+    100% 100% at 100% 50%,
+    #eb3838 0,
+    #e26a25 100%
+  );
+  box-shadow: 1px 1px 10px 2px rgba(221, 84, 66, 0.452);
+}
+
+.session-message {
+  position: absolute;
+  width: 96%;
+  margin: auto;
+  top: 50px;
+  z-index: 22;
+  width: 100%;
+  right: 0px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1120px) {
+  .main-header {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .session-message {
+    top: 32px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-btn,
+  .logout-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .session-message {
+    right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .main-header {
+    flex-flow: wrap row;
+  }
+
+  .logo {
+    flex: 1 1 100%;
+  }
+  .logout-btn,
+  .login-btn {
+    position: absolute;
+    top: 16px;
+    right: 8px;
+  }
+
+  .navlink {
+    padding-top: 20px;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .logo {
+    justify-content: flex-start;
+  }
+  .session-message {
+    right: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .session-message {
+    right: 6px;
+  }
+}
+
+@media (max-width: 300px) {
+  .session-message {
+    right: 0px;
+    width: 100%;
+  }
+}
