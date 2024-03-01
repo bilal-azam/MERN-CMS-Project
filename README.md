@@ -1,6 +1,6 @@
-# BlogSpot - A Simple CMS Web App
+# MernBlog - A Simple MERN Blog app
 
-BlogSpot is a web application built using React.js for the frontend, Node.js for the backend, and MongoDB as the database. It allows users to read blogs posted by other writers and create and publish their own blogs. The project utilizes the TinyMCE text editor to enhance the blog writing experience.
+MernBlog is a web application built using React.js for the front-end, Node.js for the back-end, and MongoDB as the database. It allows users to read blogs posted by other writers and create and publish their blogs. The project utilizes the TinyMCE text editor to enhance the blog writing experience.
 
 <br>
 
@@ -12,7 +12,7 @@ BlogSpot is a web application built using React.js for the frontend, Node.js for
 
 2. **Write, Edit, and Delete Posts:**
 
-   - Authenticated users can create, edit, and delete their own blog posts.
+   - Authenticated users can create, edit, and delete their blog posts.
 
 3. **TinyMCE Text Editor:**
 
@@ -24,7 +24,7 @@ BlogSpot is a web application built using React.js for the frontend, Node.js for
 
 5. **Update User Details:**
 
-   - Authenticated users have the ability to update their profile details.
+   - Authenticated users can update their profile details.
 
 6. **Change Password:**
    - Users can change their account password for added security.
@@ -35,7 +35,7 @@ To run BlogSpot locally, follow these steps:
 
 ### Prerequisites
 
-1. Node.js and npm installed on your machine.
+1. Node.js and npm are installed on your machine.
 2. MongoDB installed and running.
 
 ### Steps
@@ -98,7 +98,7 @@ To run BlogSpot locally, follow these steps:
      npm start
      ```
 
-     The frontend will run on `http://localhost:3000`.
+     The front-end will run on `http://localhost:3000`.
 
 5. Open your web browser and navigate to `http://localhost:3000` to access the BlogSpot web app.
 
